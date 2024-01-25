@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>https://learncssgrid.com/</title>
+</head>
+
+<body>
+    <h3>Grid Container</h3>
+    <div class="display-container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Explicit Grid: <span class="code-face">grid-template-rows</span></h3>
+    <div class="explicit-grid">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Explicit Grid: <span class="code-face">grid-template-columns</span></h3>
+    <div class="explicit-grid-two">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Explicit Grid: <span class="code-face">fr</span></h3>
+    <div class="explicit-grid-fr">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Explicit Grid: <span class="code-face">fr two</span></h3>
+    <div class="explicit-grid-fr-two">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Minimum and Maximum Grid Track Sizes</h3>
+    <div class="min-max-grid-track-sizes">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4. This item has more content than the others and is intentionally, unnecessarily,
+            superfluously, uselessly, and annoyingly verbose for the sake of example. This item has more content than
+            the others and is intentionally, unnecessarily, superfluously, uselessly, and annoyingly verbose for the
+            sake of example. This item has more content than the others and is intentionally, unnecessarily,
+            superfluously, uselessly, and annoyingly verbose for the sake of example.</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Repeating Grid Tracks</h3>
+    <div class="repeating-grid-tracks">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Repeating Grid Tracks: two</h3>
+    <div class="repeating-grid-tracks-two">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Grid Gaps (Gutters): <span class="code-face">row-gap & column-gap (deprecated = grid-row-gap //
+            grid-column-gap)</span></h3>
+    <div class="grid-gaps">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Gap Shorthand with 2 values: : <span class="code-face">gap (deprecated = grid-gap)</span></h3>
+    <div class="grid-gaps-shorthand">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Gap with one value: <span class="code-face">gap (deprecated = grid-gap)</span></h3>
+    <div class="grid-gaps-shorthand-two">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Spanning items across rows and columns: <span class="code-face">grid-column-start // grid-row-start</span></h3>
+    <div class="span-across-row-and-column">
+        <div class="box span-across-row-and-column-box" style="background-color: lightgreen;">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Spanning items across rows and columns - two: <span class="code-face">grid-column-end // grid-row-end</span></h3>
+    <div class="span-across-row-and-column">
+        <div class="box span-across-row-and-column-box-two" style="background-color: lightgreen;">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Spanning items across rows and columns using shorthand - three: <span class="code-face">grid-column // grid-row</span></h3>
+    <div class="span-across-row-and-column">
+        <div class="box span-across-row-and-column-box-three" style="background-color: lightgreen;">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">justify-content: start;</span></h3>
+    <div class="align-grid-tracks">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">justify-content: end;</span></h3>
+    <div class="align-grid-tracks-two">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">justify-content: center;</span></h3>
+    <div class="align-grid-tracks-three">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">justify-content: space-around;</span></h3>
+    <div class="align-grid-tracks-four">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">justify-content: space-between;</span></h3>
+    <div class="align-grid-tracks-five">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">align-content: start;</span></h3>
+    <div class="align-grid-tracks-six">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">align-content: end;</span></h3>
+    <div class="align-grid-tracks-seven">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">align-content: center;</span></h3>
+    <div class="align-grid-tracks-eight">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">align-content: space-around;</span></h3>
+    <div class="align-grid-tracks-nine">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">align-content: space-between;</span></h3>
+    <div class="align-grid-tracks-ten">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+    <h3>Aligning Grid Tracks: <span class="code-face">align-content: space-evenly;</span></h3>
+    <div class="align-grid-tracks-eleven">
+        <div class="box-one">1</div>
+        <div class="box-one">2</div>
+        <div class="box-one">3</div>
+        <div class="box-one">4</div>
+        <div class="box-one">5</div>
+        <div class="box-one">6</div>
+        <div class="box-one">7</div>
+        <div class="box-one">8</div>
+        <div class="box-one">9</div>
+        <div class="box-one">10</div>
+        <div class="box-one">11</div>
+        <div class="box-one">12</div>
+        <div class="box-one">13</div>
+        <div class="box-one">14</div>
+        <div class="box-one">15</div>
+        <div class="box-one">16</div>
+    </div>
+    <br><br><br>
+    <hr>
+</body>
+
+</html>
